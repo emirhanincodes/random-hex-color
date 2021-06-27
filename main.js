@@ -15,10 +15,9 @@ btn.addEventListener('click', () => {
     text.innerText = colorCode;
     document.body.style.backgroundColor = colorCode;
 })
-setTimeout(() => {
-    
+setInterval(() => {
     const colorCode = randomColorCode();
     text.innerText = colorCode;
     document.body.style.backgroundColor = colorCode;
     return colorCode;
-}, 3000);
+}, 2500);
